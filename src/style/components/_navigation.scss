@@ -1,0 +1,21 @@
+.navigation {
+  img {
+    width: 100px;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: end;
+    font-size: 25px;
+  }
+
+  .nav-item {
+    font-family: $font-menu;
+    a {
+      color: white;
+    }
+    .active {
+      color: red;
+    }
+  }
+}
