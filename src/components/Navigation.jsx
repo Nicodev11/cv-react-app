@@ -12,45 +12,32 @@ const Navigation = () => {
         <Menu>
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <NavLink
-                      to="/"
-                      className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    >
-                      Accueil
-                    </NavLink>
-                  </li>
-                  <li class="nav-item">
-                    <NavLink
-                      to="/about"
-                      className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    >
-                      A propos de moi
-                    </NavLink>
-                  </li>
-                  <li class="nav-item">
-                    <NavLink
-                      to="/contact"
-                      className={(nav) => (nav.isActive ? "nav-active" : "")}
-                    >
-                      Contact
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
+              <ul class="navbar">
+                <li class="nav-item">
+                  <NavLink
+                    to="/"
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}
+                  >
+                    Accueil
+                  </NavLink>
+                </li>
+                <li class="nav-item">
+                  <NavLink
+                    to="/about"
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}
+                  >
+                    A propos de moi
+                  </NavLink>
+                </li>
+                <li class="nav-item">
+                  <NavLink
+                    to="/contact"
+                    className={(nav) => (nav.isActive ? "nav-active" : "")}
+                  >
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
             </div>
           </nav>
         </Menu>
@@ -80,6 +67,7 @@ const Logo = styled.div`
 const Menu = styled.div`
   .nav-item {
     font-size: 20px;
+    list-style-type: none;
 
     a {
       color: white;

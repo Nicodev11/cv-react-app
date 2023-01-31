@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components/macro';
 
 const Home = () => {
   return (
-    <div>
-      home
-    </div>
+    <Wrapper>
+      
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div `
+
+`
 
 export default Home;
